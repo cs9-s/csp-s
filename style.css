@@ -765,6 +765,8 @@ body.light-mode .social-icon {
 .skin-card {
     border: 2px solid red !important;
     box-sizing: border-box;
+     width: 100%;
+    max-width: 100%;
 }
 
 .skin-link {
@@ -982,4 +984,14 @@ html, body {
 }
 img {
     box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .cards {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .skin-card {
+        width: 100%;
+    }
 }
