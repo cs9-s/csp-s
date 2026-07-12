@@ -20,3 +20,22 @@ window.onload = function(){
     };
 
 };
+document.querySelectorAll("a, button").forEach(item => {
+
+    item.addEventListener("mouseenter", () => {
+
+        cursor.style.width = "30px";
+        cursor.style.height = "30px";
+
+    });
+
+
+    item.addEventListener("mouseleave", () => {
+
+        cursor.style.width = "20px";
+        cursor.style.height = "20px";
+
+    });
+
+});
+
