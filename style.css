@@ -151,15 +151,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(
-        120deg,
-        #050505,
-        #1a0000,
-        #050505
-    );
-
-    background-size: 300% 300%;
-    animation: backgroundMove 10s infinite;
+    transition:0.3s;
 }
 
 
@@ -649,4 +641,80 @@ cursor:pointer;
 
 box-shadow:0 0 20px red;
 
+}
+#mode-toggle {
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:red;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+body {
+
+    background:#050505;
+
+    color:white;
+
+    transition:0.3s;
+
+}
+body.light-mode {
+    background:white !important;
+    color:black !important;
+}
+
+
+body.light-mode nav {
+    background:white !important;
+}
+
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode p {
+    color:black !important;
+}
+
+
+body.light-mode .card {
+    background:#eeeeee !important;
+    color:black !important;
+}
+
+
+body.light-mode a {
+    color:black !important;
+}
+body.light-mode {
+    background:white;
+    color:black;
+}
+
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode p {
+    color:black;
+}
+
+
+body.light-mode .card {
+    background:#eeeeee;
+    color:black;
+}
+
+
+body.light-mode nav {
+    background:white;
 }

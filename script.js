@@ -9,3 +9,14 @@ cursor.style.left = e.clientX + "px";
 cursor.style.top = e.clientY + "px";
 
 });
+window.onload = function(){
+
+    const button = document.getElementById("mode-toggle");
+
+    button.onclick = function(){
+
+        document.body.classList.toggle("light-mode");
+
+    };
+
+};
