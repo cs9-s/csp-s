@@ -973,3 +973,10 @@ margin:15px 0 10px;
 opacity:0.8;
 
 }
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
