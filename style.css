@@ -980,3 +980,6 @@ opacity:0.8;
 html, body {
     overflow-x: hidden;
 }
+img {
+    box-sizing: border-box;
+}
