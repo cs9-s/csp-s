@@ -212,6 +212,17 @@ z-index: 1000;
 
 }
 
+nav > div,
+nav > button {
+    margin-left: 10px;
+}
+
+#musicKit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 
 nav h2 {
 
@@ -654,7 +665,7 @@ box-shadow:0 0 20px red;
 
     border:none;
 
-    background:red;
+    background:#9b111e;
 
     color:white;
 
@@ -717,7 +728,7 @@ body.light-mode p {
 }
 
 body.light-mode .hero-title {
-    color: #ff2b2b !important;
+    color: #9b111e !important;
 }   
 
 body.light-mode .card {
@@ -995,3 +1006,280 @@ img {
         width: 100%;
     }
 }
+#particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+#musicKit {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+#musicToggle {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: 2px solid #9b111e;
+
+    background: transparent;
+    color: #9b111e;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#musicToggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #9b111e;
+}
+
+
+#nowPlaying {
+
+    font-size:13px;
+
+    opacity:0;
+
+    transition:0.3s;
+
+}
+
+
+#musicKit:hover #nowPlaying {
+
+    opacity:1;
+
+}
+
+
+#musicToggle.playing {
+    animation: spinDisc 3s linear infinite;
+    box-shadow: 0 0 20px #9b111e;
+}
+
+@keyframes spinDisc {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+#musicKit {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+#mode-toggle {
+    margin-left: auto !important;
+}
+
+#musicKit {
+    margin-left: 10px !important;
+}
+#musicToggle.playing {
+    animation: spinDisc 3s linear infinite;
+    box-shadow: 0 0 20px #9b111e;
+}
+
+@keyframes spinDisc {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+#musicKit {
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+
+#musicToggle {
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    border:2px solid #9b111e;
+
+    background:transparent;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+
+#musicToggle.playing {
+
+    animation: spinDisc 3s linear infinite;
+
+    box-shadow:
+    0 0 10px #9b111e,
+    0 0 25px #9b111e;
+
+}
+
+
+@keyframes spinDisc {
+
+    from {
+        transform:rotate(0deg);
+    }
+
+    to {
+        transform:rotate(360deg);
+    }
+
+}
+
+
+#musicInfo {
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+#nowPlaying {
+
+    font-size:13px;
+
+    color:#9b111e;
+
+}
+
+
+.equalizer {
+
+    display:flex;
+
+    gap:3px;
+
+    height:12px;
+
+}
+
+
+.equalizer span {
+
+    width:3px;
+
+    background:#9b111e;
+
+    height:5px;
+
+}
+
+
+.music-playing .equalizer span {
+
+    animation:bars .8s infinite alternate;
+
+}
+
+
+@keyframes bars {
+
+    from {
+        height:4px;
+    }
+
+    to {
+        height:12px;
+    }
+
+}
+.skin-card {
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.skin-card:hover {
+
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 0 15px rgba(176,0,32,0.5),
+        0 0 30px rgba(176,0,32,0.25);
+
+}
+.skin-card img {
+
+    animation: gunFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes gunFloat {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+}
+button {
+
+    transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.08);
+
+}
+img {
+
+    transition: .4s ease;
+
+}
+
+
+img:hover {
+
+    filter:
+    drop-shadow(0 0 15px rgba(176,0,32,.6));
+
+}   
