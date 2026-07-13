@@ -1311,18 +1311,18 @@ img:hover {
     }
 
     #musicKit{
-        display:flex;
-        align-items:center;
-        gap:8px;
-        margin-left:auto;
-    }
-
-    #musicKit{
     display:flex;
     align-items:center;
     gap:8px;
     position:absolute;
     left:16px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#mode-toggle{
+    position:absolute;
+    right:16px;
     top:50%;
     transform:translateY(-50%);
 }
